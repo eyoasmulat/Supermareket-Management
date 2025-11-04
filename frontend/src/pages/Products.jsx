@@ -1,6 +1,6 @@
-﻿import ProductList from "../components/ProductList";
+﻿import { useState } from "react";
 import ProductForm from "../components/ProductForm";
-import { useState } from "react";
+import ProductList from "../components/ProductList";
 
 export default function Products() {
     const [refresh, setRefresh] = useState(false);
