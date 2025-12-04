@@ -9,7 +9,7 @@ function App() {
     return (
         <Router>
             <Navbar />
-            <div className="container mt-4">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
                 <Routes>
                     <Route path="/" element={<DashboardPage />} />
                     <Route path="/products" element={<Products />} />

@@ -13,19 +13,19 @@ export default function ProductForm({ onAdded }) {
 
     return (
         <form onSubmit={handleSubmit} className="mb-3">
-            <div className="row">
-                <div className="col">
+            <div className="flex flex-wrap gap-2">
+                <div className="flex-grow min-w-[120px]">
                     <input
-                        className="form-control"
+                        className="w-full border border-gray-300 rounded-md px-3 py-2 shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                         placeholder="Product Name"
                         value={form.name}
                         onChange={(e) => setForm({ ...form, name: e.target.value })}
                         required
                     />
                 </div>
-                <div className="col">
+                <div className="flex-grow min-w-[120px]">
                     <input
-                        className="form-control"
+                        className="w-full border border-gray-300 rounded-md px-3 py-2 shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                         placeholder="Price"
                         type="number"
                         value={form.price}
@@ -33,8 +33,8 @@ export default function ProductForm({ onAdded }) {
                         required
                     />
                 </div>
-                <div className="col-auto">
-                    <button className="btn btn-primary">Add</button>
+                <div className="flex-auto">
+                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md transition duration-300">Add</button>
                 </div>
             </div>
         </form>

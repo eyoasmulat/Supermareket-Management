@@ -44,7 +44,7 @@ export default function Sales() {
                 }}
             >
                 <input
-                    className="form-control"
+                    className="border border-gray-300 rounded-md px-3 py-2 shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                     type="text"
                     placeholder="Product ID"
                     value={form.productId}
@@ -53,7 +53,7 @@ export default function Sales() {
                     style={{ width: "150px" }}
                 />
                 <input
-                    className="form-control"
+                    className="border border-gray-300 rounded-md px-3 py-2 shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                     type="number"
                     min="1"
                     value={form.quantity}
@@ -61,7 +61,7 @@ export default function Sales() {
                     required
                     style={{ width: "100px" }}
                 />
-                <button className="btn btn-primary" type="submit">
+                <button className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md transition duration-300" type="submit">
                     Record
                 </button>
             </form>
